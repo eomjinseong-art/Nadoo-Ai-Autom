@@ -5,23 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우</title>
     <meta property="og:title" content="AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우">
-    <meta property="og:description" content="50개 이상의 AI 도구와 자동화 워크플로우를 카테고리별로 정리. 워크플로우 오케스트레이션부터 LLM, 이미지/영상 생성까지 완벽한 자동화 파이프라인 구축 가이드.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1677442d019cecf8888b85a89ac5e64b8?w=1200&h=630&fit=crop">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="description" content="50개 이상의 AI 도구와 자동화 워크플로우를 카테고리별로 정리. 최적의 자동화 파이프라인을 구축하세요.">
+    <meta property="og:description" content="47개 도구 + 6가지 워크플로우 + 비교 기능">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Noto Sans KR', 'Inter', system-ui, -apple-system, sans-serif;
             background-color: #020617;
@@ -31,30 +20,16 @@
             letter-spacing: -0.2px;
         }
 
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #020617;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #1e293b;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #334155;
-        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
 
-        .container {
-            max-width: 80rem;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+        .container { max-width: 80rem; margin: 0 auto; padding: 0 1.5rem; }
 
         /* Header */
         header {
-            position: relative;
-            z-index: 20;
+            position: relative; z-index: 20;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             background-color: rgba(2, 6, 23, 0.8);
             backdrop-filter: blur(24px);
@@ -127,7 +102,7 @@
         .btn-primary {
             border: 1px solid rgba(6, 182, 212, 0.3);
             background-color: rgba(6, 182, 212, 0.1);
-            color: #06f;
+            color: #06b6d4;
             font-size: 0.875rem;
         }
 
@@ -180,10 +155,7 @@
             z-index: 0;
         }
 
-        .hero .container {
-            position: relative;
-            z-index: 1;
-        }
+        .hero .container { position: relative; z-index: 1; }
 
         .badge {
             display: inline-flex;
@@ -209,10 +181,7 @@
         }
 
         @keyframes ping {
-            75%, 100% {
-                transform: scale(2);
-                opacity: 0;
-            }
+            75%, 100% { transform: scale(2); opacity: 0; }
         }
 
         .hero h1 {
@@ -284,7 +253,19 @@
             color: #94a3b8;
             text-align: center;
             max-width: 42rem;
-            margin: 0 auto 3rem;
+            margin: 0 auto 1rem;
+        }
+
+        .architecture-hint {
+            font-size: 0.9rem;
+            color: #06b6d4;
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto 2rem;
+            background: rgba(6, 182, 212, 0.05);
+            padding: 1rem;
+            border-left: 3px solid rgba(6, 182, 212, 0.3);
+            border-radius: 0.25rem;
         }
 
         .architecture-grid {
@@ -343,6 +324,150 @@
             border-radius: 0.375rem;
             font-size: 0.75rem;
             font-weight: 500;
+        }
+
+        /* Workflow Details Section */
+        .workflow-details {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(15, 23, 42, 0.3) 100%);
+        }
+
+        .workflow-details h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        #workflow-subtitle {
+            font-size: 1rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        #workflow-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .workflow-tab-btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            background-color: rgba(6, 182, 212, 0.05);
+            color: #cbd5e1;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            transition: all 150ms;
+            font-family: inherit;
+        }
+
+        .workflow-tab-btn:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            background-color: rgba(6, 182, 212, 0.1);
+        }
+
+        .workflow-tab-btn.active {
+            border-color: rgba(6, 182, 212, 0.6);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(6, 182, 212, 0.1));
+            color: #06f6ff;
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        }
+
+        #workflow-content {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 1rem;
+            padding: 2rem;
+            min-height: 400px;
+        }
+
+        .workflow-step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+            position: relative;
+        }
+
+        .workflow-step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            width: 2px;
+            height: calc(100% + 20px);
+            background: linear-gradient(180deg, rgba(6, 182, 212, 0.3), rgba(6, 182, 212, 0.1));
+        }
+
+        .step-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(59, 130, 246, 0.3));
+            color: #06f6ff;
+            font-weight: bold;
+            flex-shrink: 0;
+            position: relative;
+            z-index: 1;
+            border: 2px solid rgba(6, 182, 212, 0.5);
+        }
+
+        .step-content h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.25rem;
+        }
+
+        .step-content p {
+            font-size: 0.875rem;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content .tool-link {
+            font-size: 0.8125rem;
+            color: #06b6d4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .step-content .tool-link:hover {
+            text-decoration: underline;
+        }
+
+        .workflow-info {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(6, 182, 212, 0.05);
+            border-left: 3px solid rgba(6, 182, 212, 0.3);
+            border-radius: 0.5rem;
+        }
+
+        .workflow-info h5 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #06b6d4;
+            margin-bottom: 0.5rem;
+        }
+
+        .workflow-info p {
+            font-size: 0.8125rem;
+            color: #cbd5e1;
+            margin-bottom: 0.75rem;
+        }
+
+        .workflow-info p:last-child {
+            margin-bottom: 0;
         }
 
         /* Tools Section */
@@ -445,8 +570,10 @@
         }
 
         .filter-btn:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #cbd5e1;
+            background-color: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(251, 191, 36, 0.1));
+            border-color: #fbbf24;
+            color: #fcd34d;
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
         }
 
         .filter-btn.active {
@@ -786,6 +913,7 @@
             <div class="container">
                 <h2>추천 아키텍처 & Best Practice</h2>
                 <p class="architecture-desc">실제 자동화 프로젝트에서 검증된 6가지 워크플로우 패턴</p>
+                <p class="architecture-hint">💡 <strong>각 카드를 클릭하면</strong> 워크플로우의 상세한 구조, 단계별 도구, 활용 사례를 페이지 하단에서 확인할 수 있습니다.</p>
                 <div class="architecture-grid" id="architecture-grid">
                     <div class="loading">아키텍처 로딩 중...</div>
                 </div>
@@ -799,7 +927,7 @@
                     <div style="flex: 1; min-width: 250px;">
                         <h3 style="font-size: 1.25rem; font-weight: 600; color: #06b6d4; margin-bottom: 0.5rem;">🎓 AI 무료 강좌를 찾고 있나요?</h3>
                         <p style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem;">AI 자동화, LLM, 이미지 생성 등 다양한 주제의 영상 강좌를 한곳에서 배워보세요. 초보자부터 전문가까지 모두를 위한 콘텐츠가 준비되어 있습니다.</p>
-                        <a href="https://ai-tools-site-tqbh.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #06b6d4, #3b82f6); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: all 150ms; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(6, 182, 212, 0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(6, 182, 212, 0.3)';">
+                        <a href="https://ai-tools-site-tqbh.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #06b6d4, #3b82f6); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: all 150ms; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(6, 182, 212, 0.4)';\" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(6, 182, 212, 0.3)';\ ">
                             나두 AI 방문하기
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem;">
                                 <path d="M5 12h14"></path>
@@ -839,6 +967,22 @@
             </div>
         </section>
 
+        <!-- Workflow Details Section -->
+        <section class="workflow-details" id="workflow-details-section">
+            <div class="container">
+                <h2>자동화 워크플로우 상세 분석</h2>
+                <p id="workflow-subtitle">워크플로우를 선택하면 단계별 도구와 상세 설명을 확인할 수 있습니다.</p>
+                
+                <!-- Workflow Tabs -->
+                <div id="workflow-tabs"></div>
+
+                <!-- Workflow Details Content -->
+                <div id="workflow-content">
+                    <div class="loading">워크플로우를 선택하세요.</div>
+                </div>
+            </div>
+        </section>
+
         <!-- Disclaimer & Contact -->
         <section class="disclaimer-section">
             <div class="container">
@@ -864,22 +1008,22 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- Fashion Shopping Ad -->
-    <section style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 63, 94, 0.1)); padding: 2rem 0; border-top: 1px solid rgba(236, 72, 153, 0.2);">
-        <div class="container">
-            <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 63, 94, 0.15)); border: 1px solid rgba(236, 72, 153, 0.3); border-radius: 1rem; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
-                <div>
-                    <h4 style="font-size: 1rem; font-weight: 600; color: #f472b6; margin-bottom: 0.25rem;">✨ 매일이 새로운 설렘</h4>
-                    <p style="font-size: 0.8125rem; color: #cbd5e1;">여성의류 쇼핑몰 <strong>AVOIR(아브아르)</strong></p>
+        <!-- Fashion Shopping Ad -->
+        <section style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 63, 94, 0.1)); padding: 2rem 0; border-top: 1px solid rgba(236, 72, 153, 0.2);">
+            <div class="container">
+                <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 63, 94, 0.15)); border: 1px solid rgba(236, 72, 153, 0.3); border-radius: 1rem; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="font-size: 1rem; font-weight: 600; color: #f472b6; margin-bottom: 0.25rem;">✨ 매일이 새로운 설렘</h4>
+                        <p style="font-size: 0.8125rem; color: #cbd5e1;">여성의류 쇼핑몰 <strong>AVOIR(아브아르)</strong></p>
+                    </div>
+                    <a href="https://avoir24.com/" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #f472b6, #ec4899); color: white; padding: 0.5rem 1.25rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.8125rem; white-space: nowrap; transition: all 150ms; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(236, 72, 153, 0.4)';\" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(236, 72, 153, 0.3)';\ ">
+                        AVOIR 둘러보기 →
+                    </a>
                 </div>
-                <a href="https://avoir24.com/" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #f472b6, #ec4899); color: white; padding: 0.5rem 1.25rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.8125rem; white-space: nowrap; transition: all 150ms; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(236, 72, 153, 0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(236, 72, 153, 0.3)';">
-                    AVOIR 둘러보기 →
-                </a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -889,33 +1033,30 @@
     </footer>
 
     <script>
-        // 데이터 로드
         let allTools = [];
         let allArchitectures = [];
         let filteredTools = [];
         let activeCategory = '전체';
+        let selectedArch = null;
 
         async function loadData() {
             try {
-                // tools.json 로드
                 const toolsRes = await fetch('./tools.json');
                 const toolsData = await toolsRes.json();
                 allTools = toolsData.tools || [];
                 filteredTools = allTools;
 
-                // architecture.json 로드
                 const archRes = await fetch('./architecture.json');
                 const archData = await archRes.json();
                 allArchitectures = archData.architectures || [];
 
-                // 업데이트 날짜 설정
                 document.getElementById('last-updated').textContent = toolsData.meta?.lastUpdated || 'N/A';
                 document.getElementById('hero-stats').textContent = `${allTools.length}개 도구 · ${new Set(allTools.map(t => t.category)).size}개 카테고리 · Best Practice`;
 
-                // UI 렌더링
                 renderArchitecture();
                 renderTools();
                 renderFilters();
+                renderWorkflowTabs();
                 setupSearch();
             } catch (error) {
                 console.error('데이터 로드 실패:', error);
@@ -925,7 +1066,7 @@
         function renderArchitecture() {
             const grid = document.getElementById('architecture-grid');
             grid.innerHTML = allArchitectures.map(arch => `
-                <div class="arch-card">
+                <div class="arch-card" data-arch-id="${arch.id}">
                     <div class="arch-card-title">${arch.title}</div>
                     <div class="arch-card-subtitle">${arch.subtitle}</div>
                     <div class="arch-card-desc">${arch.description}</div>
@@ -937,6 +1078,100 @@
                     </div>
                 </div>
             `).join('');
+
+            document.querySelectorAll('.arch-card').forEach(card => {
+                card.addEventListener('click', () => {
+                    const archId = card.dataset.archId;
+                    selectedArch = allArchitectures.find(a => a.id === archId);
+                    if (selectedArch) {
+                        renderWorkflowDetails(archId);
+                        document.getElementById('workflow-details-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        updateActiveTab(archId);
+                    }
+                });
+            });
+        }
+
+        function renderWorkflowTabs() {
+            const tabsContainer = document.getElementById('workflow-tabs');
+            tabsContainer.innerHTML = allArchitectures.map(arch => `
+                <button class="workflow-tab-btn" data-arch-id="${arch.id}">
+                    ${arch.title}
+                </button>
+            `).join('');
+
+            document.querySelectorAll('.workflow-tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const archId = btn.dataset.archId;
+                    selectedArch = allArchitectures.find(a => a.id === archId);
+                    if (selectedArch) {
+                        renderWorkflowDetails(archId);
+                        updateActiveTab(archId);
+                    }
+                });
+            });
+        }
+
+        function updateActiveTab(archId) {
+            document.querySelectorAll('.workflow-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.archId === archId) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        function renderWorkflowDetails(archId) {
+            const arch = allArchitectures.find(a => a.id === archId);
+            if (!arch) return;
+
+            const content = document.getElementById('workflow-content');
+            const toolMap = {};
+            allTools.forEach(tool => toolMap[tool.id] = tool);
+
+            let stepsHtml = '';
+            arch.tools.forEach((tool, index) => {
+                const fullTool = toolMap[tool.toolId];
+                stepsHtml += `
+                    <div class="workflow-step">
+                        <div class="step-icon">${index + 1}</div>
+                        <div class="step-content">
+                            <h4>${tool.toolName}</h4>
+                            <p>${tool.detail}</p>
+                            ${fullTool ? `<a href="${fullTool.url}" target="_blank" class="tool-link">공식 웹사이트 방문 →</a>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+
+            content.innerHTML = `
+                <h3 style="font-size: 1.25rem; font-weight: 600; color: white; margin-bottom: 1.5rem;">${arch.title}</h3>
+                <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 2rem;>${arch.description}</p>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="font-size: 1rem; font-weight: 600; color: #06b6d4; margin-bottom: 1rem;">📊 워크플로우 흐름</h4>
+                    ${stepsHtml}
+                </div>
+
+                <div class="workflow-info">
+                    <h5>💡 활용 사례</h5>
+                    <p>${arch.useCases}</p>
+                </div>
+
+                <div class="workflow-info" style="margin-top: 1rem;">
+                    <h5>🎯 추천 시나리오</h5>
+                    <p>${arch.recommendations}</p>
+                </div>
+
+                <div class="workflow-info" style="margin-top: 1rem;">
+                    <h5>⚡ 성능 팁</h5>
+                    <p>${arch.performanceTips}</p>
+                </div>
+
+                <div style="margin-top: 2rem; padding: 1rem; background: rgba(6, 182, 212, 0.05); border-left: 3px solid rgba(6, 182, 212, 0.3); border-radius: 0.5rem;">
+                    <p style="font-size: 0.8125rem; color: #cbd5e1;"><strong>흐름도:</strong> ${arch.flow}</p>
+                </div>
+            `;
         }
 
         function renderFilters() {
@@ -1028,7 +1263,6 @@
             renderTools();
         }
 
-        // 페이지 로드 시 데이터 로드
         document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
