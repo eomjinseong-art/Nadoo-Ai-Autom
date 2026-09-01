@@ -5,210 +5,97 @@
       "title": "표준 자동화 워크플로우",
       "subtitle": "API와 데이터 중심의 엔터프라이즈 자동화",
       "description": "n8n을 중심으로 다양한 데이터 소스를 연동하고 LLM으로 텍스트를 처리한 후 결과를 전달하는 표준 구조입니다.",
+      "useCases": "데이터 수집, 텍스트 분석, 결과 저장 및 자동 알림",
+      "recommendations": "엔터프라이즈급 자동화, 안정성 우선 프로젝트",
+      "performanceTips": "n8n 자체 호스팅으로 비용 절감 · Supabase pgvector로 RAG 구축 가능 · API 레이트 제한 모니터링 필수",
       "tools": [
-        {
-          "stage": "1. 워크플로우 오케스트레이션",
-          "toolId": "n8n",
-          "toolName": "n8n",
-          "reason": "500개 이상 통합 지원, 완전 무료 오픈소스"
-        },
-        {
-          "stage": "2. LLM 처리 (텍스트 분석/생성)",
-          "toolId": "gpt4o",
-          "toolName": "OpenAI GPT-4o",
-          "reason": "JSON Mode, Function Calling 등 고급 기능 지원"
-        },
-        {
-          "stage": "3. 데이터 저장",
-          "toolId": "supabase",
-          "toolName": "Supabase",
-          "reason": "PostgreSQL 기반 BaaS + Vector DB 통합"
-        },
-        {
-          "stage": "4. 배포 & 모니터링",
-          "toolId": "vercel",
-          "toolName": "Vercel",
-          "reason": "서버리스 배포 및 Webhook 호스팅"
-        }
+        {"stage": 1, "toolId": "n8n", "toolName": "n8n", "reason": "500개 이상 통합 지원, 완전 무료 오픈소스", "detail": "워크플로우 오케스트레이션의 핵심. 모든 데이터 소스를 연결하여 자동화 파이프라인 구축"},
+        {"stage": 2, "toolId": "gpt4o", "toolName": "OpenAI GPT-4o", "reason": "JSON Mode, Function Calling 등 고급 기능 지원", "detail": "수집된 데이터를 분석하고 구조화된 형태로 변환. JSON으로 출력하여 자동화 연계"},
+        {"stage": 3, "toolId": "supabase", "toolName": "Supabase", "reason": "PostgreSQL 기반 BaaS + Vector DB 통합", "detail": "처리된 데이터를 영구 저장. pgvector로 RAG 기능도 구현 가능"},
+        {"stage": 4, "toolId": "vercel", "toolName": "Vercel", "reason": "서버리스 배포 및 Webhook 호스팅", "detail": "자동화 결과를 웹 인터페이스로 제공. GitHub Actions와 연동하여 정기 실행"}
       ],
-      "flow": "데이터 소스 → n8n 수집 → GPT-4o 분석 → Supabase 저장 → Webhook 트리거",
-      "useCase": "데이터 수집, 텍스트 분석, 결과 저장 및 자동 알림"
+      "flow": "데이터 소스 → n8n 수집 → GPT-4o 분석 → Supabase 저장 → Webhook 트리거"
     },
     {
       "id": "content-creation",
       "title": "콘텐츠 자동 생성 워크플로우",
       "subtitle": "텍스트, 이미지, 영상 완전 자동화",
       "description": "주제에서 최종 콘텐츠까지 자동으로 생성하는 크리에이티브 자동화 구조입니다.",
+      "useCases": "소셜 미디어 콘텐츠, 마케팅 자료, 교육용 영상 자동 제작",
+      "recommendations": "콘텐츠 마케팅, 대량 콘텐츠 필요 시, 시간 효율 중심",
+      "performanceTips": "Pillow로 배치 처리하여 비용 절감 · 템플릿 재사용으로 성능 최적화 · 고품질 음성은 ElevenLabs 추가 비용 감수",
       "tools": [
-        {
-          "stage": "1. 주제/계획 생성",
-          "toolId": "claude",
-          "toolName": "Claude 3.5 Sonnet",
-          "reason": "창의적 글쓰기와 구조화 능력 우수"
-        },
-        {
-          "stage": "2. 이미지 생성",
-          "toolId": "flux",
-          "toolName": "Flux",
-          "reason": "고속 텍스트->이미지 생성, 정확도 우수"
-        },
-        {
-          "stage": "3. 카드뉴스/합성",
-          "toolId": "pillow",
-          "toolName": "Pillow (Python)",
-          "reason": "배치 처리 및 템플릿 자동화, 비용 0원"
-        },
-        {
-          "stage": "4. 음성 추가",
-          "toolId": "edge-tts",
-          "toolName": "Edge-TTS",
-          "reason": "무료 고품질 음성 변환"
-        },
-        {
-          "stage": "5. 영상 편집",
-          "toolId": "ffmpeg",
-          "toolName": "FFmpeg",
-          "reason": "멀티포맷 변환 및 자동화 필수 도구"
-        }
+        {"stage": 1, "toolId": "claude", "toolName": "Claude 3.5 Sonnet", "reason": "창의적 글쓰기와 구조화 능력 우수", "detail": "주제를 받아 기획, 제목, 본문을 창의적으로 작성"},
+        {"stage": 2, "toolId": "flux", "toolName": "Flux", "reason": "고속 텍스트->이미지 생성, 정확도 우수", "detail": "텍스트 기반 이미지 프롬프트를 받아 고품질 이미지 생성"},
+        {"stage": 3, "toolId": "pillow", "toolName": "Pillow (Python)", "reason": "배치 처리 및 템플릿 자동화, 비용 0원", "detail": "생성된 이미지에 텍스트, 로고, 디자인 요소 추가하여 카드뉴스 완성"},
+        {"stage": 4, "toolId": "edge-tts", "toolName": "Edge-TTS", "reason": "무료 고품질 음성 변환", "detail": "본문 텍스트를 자연스러운 음성으로 변환"},
+        {"stage": 5, "toolId": "ffmpeg", "toolName": "FFmpeg", "reason": "멀티포맷 변환 및 자동화 필수 도구", "detail": "이미지 + 음성을 합성하여 최종 영상 파일 생성"}
       ],
-      "flow": "주제 입력 → Claude 기획/글쓰기 → Flux 이미지 생성 → Pillow 카드뉴스 합성 → Edge-TTS 음성 → FFmpeg 영상 완성",
-      "useCase": "소셜 미디어 콘텐츠, 마케팅 자료, 교육용 영상 자동 제작"
+      "flow": "주제 입력 → Claude 기획/글쓰기 → Flux 이미지 생성 → Pillow 카드뉴스 합성 → Edge-TTS 음성 → FFmpeg 영상 완성"
     },
     {
       "id": "data-intelligence",
       "title": "데이터 지능형 자동화",
       "subtitle": "RAG 기반 검색 및 분석 자동화",
       "description": "기존 데이터와 문서를 LLM이 활용 가능한 형태로 인덱싱하고 지능형 검색을 구현합니다.",
+      "useCases": "기술 문서 검색 봇, 고객 지원 자동화, 내부 문서 검색 시스템",
+      "recommendations": "대용량 문서 관리, 자동화된 Q&A 시스템, 지식 기반 검색",
+      "performanceTips": "LlamaIndex로 청킹 최적화 · Supabase pgvector로 고속 검색 · 캐싱으로 API 호출 줄이기",
       "tools": [
-        {
-          "stage": "1. 데이터 수집 & 크롤링",
-          "toolId": "firecrawl",
-          "toolName": "Firecrawl",
-          "reason": "LLM 친화적 웹 크롤링 마크다운 변환"
-        },
-        {
-          "stage": "2. 문서 인덱싱",
-          "toolId": "llamaindex",
-          "toolName": "LlamaIndex",
-          "reason": "다양한 소스 문서 인덱싱 및 RAG 구축"
-        },
-        {
-          "stage": "3. 벡터 저장소",
-          "toolId": "supabase",
-          "toolName": "Supabase Vector DB",
-          "reason": "pgvector 기반 의미 검색"
-        },
-        {
-          "stage": "4. LLM 검색 답변",
-          "toolId": "gpt4o",
-          "toolName": "GPT-4o",
-          "reason": "컨텍스트 기반 정확한 답변 생성"
-        }
+        {"stage": 1, "toolId": "firecrawl", "toolName": "Firecrawl", "reason": "LLM 친화적 웹 크롤링 마크다운 변환", "detail": "웹사이트 또는 문서를 마크다운 형식으로 변환하여 LLM 처리 준비"},
+        {"stage": 2, "toolId": "llamaindex", "toolName": "LlamaIndex", "reason": "다양한 소스 문서 인덱싱 및 RAG 구축", "detail": "문서를 작은 청크로 분할하고 요약하여 검색 성능 최적화"},
+        {"stage": 3, "toolId": "supabase", "toolName": "Supabase Vector DB", "reason": "pgvector 기반 의미 검색", "detail": "문서 벡터를 저장하고 유사도 기반 검색 수행"},
+        {"stage": 4, "toolId": "gpt4o", "toolName": "GPT-4o", "reason": "컨텍스트 기반 정확한 답변 생성", "detail": "검색된 관련 문서를 바탕으로 자연스러운 답변 생성"}
       ],
-      "flow": "웹사이트 크롤링 → 마크다운 변환 → LlamaIndex 인덱싱 → Supabase 벡터 저장 → GPT-4o RAG 검색",
-      "useCase": "기술 문서 검색 봇, 고객 지원 자동화, 내부 문서 검색 시스템"
+      "flow": "웹사이트 크롤링 → 마크다운 변환 → LlamaIndex 인덱싱 → Supabase 벡터 저장 → GPT-4o RAG 검색"
     },
     {
       "id": "multi-agent",
       "title": "멀티에이전트 협력 시스템",
       "subtitle": "AI 팀이 역할을 나누어 프로젝트 완성",
       "description": "여러 AI 에이전트가 기획, 작성, 검수 등 각각의 역할을 수행하여 최종 결과를 도출합니다.",
+      "useCases": "프로젝트 자동 진행, 복합 업무 자동화, 연구 논문 자동 작성",
+      "recommendations": "표준 일관성 자동화 프레임워크, 복합 업무 조율, 장시간 프로젝트",
+      "performanceTips": "CrewAI로 에이전트 역할 명확히 · 각 에이전트 권한 제한 · 최종 검증 에이전트 추가",
       "tools": [
-        {
-          "stage": "1. 에이전트 프레임워크",
-          "toolId": "crewai",
-          "toolName": "CrewAI",
-          "reason": "다중 에이전트 역할 정의 및 협력"
-        },
-        {
-          "stage": "2. LLM 백엔드",
-          "toolId": "gpt4o",
-          "toolName": "GPT-4o",
-          "reason": "강력한 추론능력으로 에이전트 작업 수행"
-        },
-        {
-          "stage": "3. 코드 에이전트",
-          "toolId": "cursor",
-          "toolName": "Cursor",
-          "reason": "개발 작업 자동화 및 코드 검증"
-        },
-        {
-          "stage": "4. 워크플로우 연결",
-          "toolId": "n8n",
-          "toolName": "n8n",
-          "reason": "에이전트 결과 통합 및 자동화"
-        }
+        {"stage": 1, "toolId": "crewai", "toolName": "CrewAI", "reason": "다중 에이전트 역할 정의 및 협력", "detail": "기획자, 작성자, 검수자 등 역할을 정의하고 서로 협력하도록 설정"},
+        {"stage": 2, "toolId": "gpt4o", "toolName": "GPT-4o", "reason": "강력한 추론능력으로 에이전트 작업 수행", "detail": "각 에이전트의 LLM 백엔드로 역할별 작업 수행"},
+        {"stage": 3, "toolId": "cursor", "toolName": "Cursor", "reason": "개발 작업 자동화 및 코드 검증", "detail": "개발 에이전트가 코드 작성, 테스트, 배포 자동화"},
+        {"stage": 4, "toolId": "n8n", "toolName": "n8n", "reason": "에이전트 결과 통합 및 자동화", "detail": "모든 에이전트의 출력을 수집하고 최종 결과로 통합"}
       ],
-      "flow": "CrewAI 팀 정의 → GPT-4o 기획/작성 → Cursor 코드 생성 → n8n 통합 및 배포",
-      "useCase": "프로젝트 자동 진행, 복합 업무 자동화, 연구 논문 자동 작성"
+      "flow": "CrewAI 팀 정의 → GPT-4o 기획/작성 → Cursor 코드 생성 → n8n 통합 및 배포"
     },
     {
       "id": "realtime-interaction",
       "title": "실시간 상호작용 자동화",
       "subtitle": "음성 및 텍스트 기반 실시간 대응",
       "description": "사용자의 음성/텍스트 입력에 실시간으로 응답하는 대화형 시스템입니다.",
+      "useCases": "AI 고객 상담, 교육용 AI 튜터, 멀티모달 대화 시스템",
+      "recommendations": "실시간 응답 필수, 사용자 인터랙션 많은 시나리오, 음성 기반 인터페이스",
+      "performanceTips": "Whisper로 다국어 자동 감지 · ElevenLabs 음성 캐싱 · 스트리밍 응답으로 지연 최소화",
       "tools": [
-        {
-          "stage": "1. 음성 입력",
-          "toolId": "whisper",
-          "toolName": "Whisper",
-          "reason": "정확한 음성 인식 및 다국어 지원"
-        },
-        {
-          "stage": "2. 텍스트 처리",
-          "toolId": "gpt4o",
-          "toolName": "GPT-4o",
-          "reason": "실시간 대화 및 컨텍스트 유지"
-        },
-        {
-          "stage": "3. 음성 응답",
-          "toolId": "elevenlabs",
-          "toolName": "ElevenLabs",
-          "reason": "자연스러운 고품질 음성 출력"
-        },
-        {
-          "stage": "4. 아바타 응답",
-          "toolId": "avatar",
-          "toolName": "HeyGen",
-          "reason": "AI 아바타로 시각적 피드백 제공"
-        }
+        {"stage": 1, "toolId": "whisper", "toolName": "Whisper", "reason": "정확한 음성 인식 및 다국어 지원", "detail": "사용자 음성을 텍스트로 변환. 백그라운드 노이즈 자동 제거"},
+        {"stage": 2, "toolId": "gpt4o", "toolName": "GPT-4o", "reason": "실시간 대화 및 컨텍스트 유지", "detail": "인식된 텍스트에 대해 자연스러운 응답 생성"},
+        {"stage": 3, "toolId": "elevenlabs", "toolName": "ElevenLabs", "reason": "자연스러운 고품질 음성 출력", "detail": "생성된 텍스트를 감정 있는 음성으로 변환"},
+        {"stage": 4, "toolId": "avatar", "toolName": "HeyGen", "reason": "AI 아바타로 시각적 피드백 제공", "detail": "음성 응답과 함께 AI 아바타 입 움직임 동기화"}
       ],
-      "flow": "음성 입력 → Whisper 인식 → GPT-4o 응답 생성 → ElevenLabs 음성 변환 → HeyGen 아바타 표현",
-      "useCase": "AI 고객 상담, 교육용 AI 튜터, 멀티모달 대화 시스템"
+      "flow": "음성 입력 → Whisper 인식 → GPT-4o 응답 생성 → ElevenLabs 음성 변환 → HeyGen 아바타 표현"
     },
     {
       "id": "monitoring-automation",
       "title": "모니터링 & 알림 자동화",
       "subtitle": "지속적 감시 및 신속한 대응",
       "description": "시스템과 프로젝트 상태를 지속적으로 모니터링하고 문제 발생 시 자동으로 알립니다.",
+      "useCases": "서비스 안정성 보장, 자동화 시스템 신뢰성 유지, 비용 최적화 모니터링",
+      "recommendations": "24/7 운영 시스템, 중요 서비스 감시, 실시간 장애 대응",
+      "performanceTips": "UptimeRobot으로 다중 체크 포인트 설정 · LangSmith로 LLM 비용 추적 · 임계값 기반 알림 설정",
       "tools": [
-        {
-          "stage": "1. 상태 모니터링",
-          "toolId": "monitoring",
-          "toolName": "UptimeRobot",
-          "reason": "API 및 서비스 상태 24/7 감시"
-        },
-        {
-          "stage": "2. 오류 추적",
-          "toolId": "observability",
-          "toolName": "Sentry & LangSmith",
-          "reason": "코드 오류 및 LLM 성능 추적"
-        },
-        {
-          "stage": "3. 분석 & 리포팅",
-          "toolId": "gpt4o",
-          "toolName": "GPT-4o",
-          "reason": "로그 분석 및 인사이트 생성"
-        },
-        {
-          "stage": "4. 알림 채널",
-          "toolId": "communication",
-          "toolName": "Slack / Telegram",
-          "reason": "실시간 알림 및 승인 채널"
-        }
+        {"stage": 1, "toolId": "monitoring", "toolName": "UptimeRobot", "reason": "API 및 서비스 상태 24/7 감시", "detail": "매분 서비스 상태 체크. 다운타임 감지 시 즉시 알림"},
+        {"stage": 2, "toolId": "observability", "toolName": "Sentry & LangSmith", "reason": "코드 오류 및 LLM 성능 추적", "detail": "오류 로그 수집, LLM 토큰 사용량 및 비용 실시간 추적"},
+        {"stage": 3, "toolId": "gpt4o", "toolName": "GPT-4o", "reason": "로그 분석 및 인사이트 생성", "detail": "수집된 로그를 분석하여 원인 파악 및 해결책 제시"},
+        {"stage": 4, "toolId": "communication", "toolName": "Slack / Telegram", "reason": "실시간 알림 및 승인 채널", "detail": "문제 발생 시 슬랙/텔레그램으로 즉시 알림 및 대응"}
       ],
-      "flow": "UptimeRobot 감시 → 문제 감지 → Sentry/LangSmith 로그 수집 → GPT-4o 분석 → Slack 알림",
-      "useCase": "서비스 안정성 보장, 자동화 시스템 신뢰성 유지, 비용 최적화 모니터링"
+      "flow": "UptimeRobot 감시 → 문제 감지 → Sentry/LangSmith 로그 수집 → GPT-4o 분석 → Slack 알림"
     }
   ]
 }
