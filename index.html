@@ -1,0 +1,1035 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우</title>
+    <meta property="og:title" content="AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우">
+    <meta property="og:description" content="50개 이상의 AI 도구와 자동화 워크플로우를 카테고리별로 정리. 워크플로우 오케스트레이션부터 LLM, 이미지/영상 생성까지 완벽한 자동화 파이프라인 구축 가이드.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1677442d019cecf8888b85a89ac5e64b8?w=1200&h=630&fit=crop">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="50개 이상의 AI 도구와 자동화 워크플로우를 카테고리별로 정리. 최적의 자동화 파이프라인을 구축하세요.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #020617;
+            color: #e2e8f0;
+            line-height: 1.6;
+            font-size: 16px;
+            letter-spacing: -0.2px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+
+        .container {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            z-index: 20;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            background-color: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(24px);
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.75rem;
+            background: linear-gradient(135deg, #22d3ee, #3b82f6);
+            box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.25);
+        }
+
+        .logo svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            color: white;
+        }
+
+        .header-title h1 {
+            font-size: 1.125rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: white;
+        }
+
+        .header-title p {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 0.125rem;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        button, a.btn {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+            font-size: inherit;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary {
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            background-color: rgba(6, 182, 212, 0.1);
+            color: #06f;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            background-color: rgba(6, 182, 212, 0.2);
+            color: #a5f3fc;
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #cbd5e1;
+        }
+
+        .btn-secondary:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .btn svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        @media (max-width: 640px) {
+            .btn span:not(:first-child) {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: 
+                radial-gradient(circle at 25% 0%, rgba(6, 182, 212, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 10rem, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 33.333% 100%, rgba(20, 184, 166, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.375rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge::before {
+            content: '';
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background-color: #22d3ee;
+            animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+
+        @keyframes ping {
+            75%, 100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.75rem);
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.025em;
+            color: white;
+            margin: 1.5rem 0;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #22d3ee, #60a5fa, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: #94a3b8;
+            max-width: 42rem;
+            margin: 1.5rem auto;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: #cbd5e1;
+        }
+
+        .feature-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+
+        /* Architecture Section */
+        .architecture {
+            padding: 5rem 0;
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(15, 23, 42, 0.5) 100%);
+        }
+
+        .architecture h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .architecture-desc {
+            font-size: 1.125rem;
+            color: #94a3b8;
+            text-align: center;
+            max-width: 42rem;
+            margin: 0 auto 3rem;
+        }
+
+        .architecture-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .arch-card {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.6), rgba(2, 6, 23, 0.8));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 150ms;
+            cursor: pointer;
+        }
+
+        .arch-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(2, 6, 23, 0.9));
+            transform: translateY(-2px);
+        }
+
+        .arch-card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+
+        .arch-card-subtitle {
+            font-size: 0.875rem;
+            color: #06b6d4;
+            margin-bottom: 1rem;
+        }
+
+        .arch-card-desc {
+            font-size: 0.875rem;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .arch-tools {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .arch-tool-badge {
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            color: #06b6d4;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Tools Section */
+        .tools {
+            padding: 3rem 0;
+        }
+
+        .tools-header {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .tools-header {
+                flex-direction: row;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+
+        .tools-header-left h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .tools-header-left p {
+            font-size: 0.875rem;
+            color: #94a3b8;
+            margin-top: 0.25rem;
+        }
+
+        .tools-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 1rem 0.5rem 2.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            font-size: 0.875rem;
+            font-family: inherit;
+            transition: all 150ms;
+        }
+
+        .search-box input::placeholder {
+            color: #64748b;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: rgba(6, 182, 212, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .search-box svg {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            color: #64748b;
+        }
+
+        @media (min-width: 640px) {
+            .search-box input {
+                width: 16rem;
+            }
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.05);
+            color: #94a3b8;
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 150ms;
+        }
+
+        .filter-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #cbd5e1;
+        }
+
+        .filter-btn.active {
+            border-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255, 255, 255, 0.15);
+            color: white;
+        }
+
+        .filter-btn svg {
+            width: 0.875rem;
+            height: 0.875rem;
+            display: inline;
+            margin-right: 0.25rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 768px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .tools-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .tool-card {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.4), rgba(2, 6, 23, 0.6));
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            transition: all 150ms;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tool-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.6), rgba(2, 6, 23, 0.8));
+            transform: translateY(-2px);
+        }
+
+        .tool-card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 0.75rem;
+            background: rgba(6, 182, 212, 0.1);
+            color: #06b6d4;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .tool-card-title {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .tool-card-desc {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            margin-top: 0.25rem;
+        }
+
+        .tool-details {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+
+        .tool-oneliner {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #e2e8f0;
+            margin-bottom: 0.75rem;
+        }
+
+        .tool-description {
+            font-size: 0.8125rem;
+            color: #cbd5e1;
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        .tool-usecases {
+            font-size: 0.8125rem;
+            color: #94a3b8;
+            margin-bottom: 0.75rem;
+            padding: 0.75rem;
+            background: rgba(6, 182, 212, 0.05);
+            border-left: 3px solid rgba(6, 182, 212, 0.3);
+            border-radius: 0.25rem;
+        }
+
+        .tool-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            gap: 0.5rem;
+        }
+
+        .tool-price {
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .price-free {
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .price-freemium {
+            background: rgba(59, 130, 246, 0.1);
+            color: #60a5fa;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+
+        .price-paid {
+            background: rgba(51, 65, 85, 0.4);
+            color: #94a3b8;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tool-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.375rem;
+            background: rgba(6, 182, 212, 0.1);
+            color: #06b6d4;
+            transition: all 150ms;
+            flex-shrink: 0;
+        }
+
+        .tool-link:hover {
+            background: rgba(6, 182, 212, 0.2);
+            color: #a5f3fc;
+        }
+
+        .tool-link svg {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        /* Disclaimer & Contact */
+        .disclaimer-section {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(15, 23, 42, 0.5) 100%);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .disclaimer {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(251, 146, 60, 0.2);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .disclaimer h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #fed7aa;
+            margin-bottom: 0.75rem;
+        }
+
+        .disclaimer p {
+            font-size: 0.875rem;
+            color: #fed7aa;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .disclaimer ul {
+            font-size: 0.875rem;
+            color: #fed7aa;
+            line-height: 1.6;
+            padding-left: 1.5rem;
+        }
+
+        .disclaimer li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-section {
+            background: rgba(6, 182, 212, 0.05);
+            border: 1px solid rgba(6, 182, 212, 0.2);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-section p {
+            font-size: 0.875rem;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-btn {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            border: none;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 150ms;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 2rem 0;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #94a3b8;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path>
+                        <path d="M20 3v4"></path>
+                        <path d="M22 5h-4"></path>
+                        <path d="M4 17v2"></path>
+                        <path d="M5 18H3"></path>
+                    </svg>
+                </div>
+                <div class="header-title">
+                    <h1>AI Tools Atlas</h1>
+                    <p>카테고리별 AI 도구 &amp; 자동화 워크플로우</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <a href="#contact" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" x2="12" y1="15" y2="3"></line>
+                    </svg>
+                    <span>문의하기</span>
+                </a>
+                <a href="https://github.com/topics/ai-tools" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span>오픈소스</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="badge">
+                    <span id="hero-stats">47개 도구 · 9개 카테고리 · 자동화 시나리오</span>
+                </div>
+                <h1>AI 도구를 연결하면<br><span class="gradient-text">하나의 자동화 엔진</span>이 됩니다</h1>
+                <p>카테고리별로 정리된 AI 도구들을 탐색하고, 실제 자동화 워크플로우에서 어떻게 조합되는지 확인하세요. 가장 효율적인 자동화 파이프라인을 설계하는 모든 힌트가 여기 있습니다.</p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">📊</div>
+                        <span>카테고리 탐색</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <span>워크플로우 시각화</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">📈</div>
+                        <span>자동화 효율 분석</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section class="architecture">
+            <div class="container">
+                <h2>추천 아키텍처 & Best Practice</h2>
+                <p class="architecture-desc">실제 자동화 프로젝트에서 검증된 6가지 워크플로우 패턴</p>
+                <div class="architecture-grid" id="architecture-grid">
+                    <div class="loading">아키텍처 로딩 중...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Learning Ad -->
+        <section style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(59, 130, 246, 0.1)); padding: 3rem 0; border-top: 1px solid rgba(6, 182, 212, 0.2); border-bottom: 1px solid rgba(6, 182, 212, 0.2);">
+            <div class="container">
+                <div style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(59, 130, 246, 0.15)); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 1rem; padding: 2rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 250px;">
+                        <h3 style="font-size: 1.25rem; font-weight: 600; color: #06b6d4; margin-bottom: 0.5rem;">🎓 AI 무료 강좌를 찾고 있나요?</h3>
+                        <p style="font-size: 0.875rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem;">AI 자동화, LLM, 이미지 생성 등 다양한 주제의 영상 강좌를 한곳에서 배워보세요. 초보자부터 전문가까지 모두를 위한 콘텐츠가 준비되어 있습니다.</p>
+                        <a href="https://ai-tools-site-tqbh.vercel.app/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; background: linear-gradient(135deg, #06b6d4, #3b82f6); color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.875rem; transition: all 150ms; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(6, 182, 212, 0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 15px rgba(6, 182, 212, 0.3)';">
+                            나두 AI 방문하기
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1rem; height: 1rem;">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div style="flex-shrink: 0; font-size: 4rem; opacity: 0.7;">📚</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section class="tools" id="tools">
+            <div class="container">
+                <div class="tools-header">
+                    <div class="tools-header-left">
+                        <h2>카테고리별 AI 도구</h2>
+                        <p id="tools-count">전체 도구 로딩 중...</p>
+                    </div>
+                    <div class="tools-controls">
+                        <div class="search-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.3-4.3"></path>
+                            </svg>
+                            <input type="text" id="search-input" placeholder="도구 검색..." />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-filters" id="category-filters"></div>
+
+                <div class="tools-grid" id="tools-grid">
+                    <div class="loading">도구 로딩 중...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Disclaimer & Contact -->
+        <section class="disclaimer-section">
+            <div class="container">
+                <div class="disclaimer">
+                    <h3>⚠️ 중요 안내</h3>
+                    <p><strong>본 정보는 교육용 가이드입니다.</strong> 모든 정보는 최선의 노력으로 수집되었으나, 완벽성을 보장하지 않습니다.</p>
+                    <ul>
+                        <li><strong>요금제 변경:</strong> AI 도구 및 서비스의 요금제, 기능, 정책은 예고 없이 변경될 수 있습니다. 사용 전 각 도구의 공식 웹사이트에서 최신 정보를 반드시 확인하세요.</li>
+                        <li><strong>정확성:</strong> 본 사이트에서 제공하는 정보는 참고용이며, 실제 사용 시 책임은 사용자에게 있습니다.</li>
+                        <li><strong>법적 책임:</strong> 본 사이트의 정보를 근거로 발생한 손해나 손실에 대해 책임지지 않습니다.</li>
+                        <li><strong>개인정보:</strong> 이 사이트는 Google Analytics를 사용하여 익명의 방문 통계를 수집합니다.</li>
+                    </ul>
+                </div>
+
+                <div class="contact-section" id="contact">
+                    <h3>피드백 & 제안</h3>
+                    <p>도구 추가, 수정 요청, 또는 기타 제안사항이 있으신가요?</p>
+                    <form id="contact-form" action="https://formspree.io/f/xnpadyby" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 400px; margin: 0 auto;">
+                        <input type="email" name="email" placeholder="이메일" required style="padding: 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(6, 182, 212, 0.3); background: rgba(255, 255, 255, 0.05); color: white; font-family: inherit; font-size: 0.875rem;" />
+                        <textarea name="message" placeholder="제안 내용을 입력하세요..." rows="4" required style="padding: 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(6, 182, 212, 0.3); background: rgba(255, 255, 255, 0.05); color: white; font-family: inherit; font-size: 0.875rem; resize: vertical;"></textarea>
+                        <button type="submit" class="contact-btn">제안 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fashion Shopping Ad -->
+    <section style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(244, 63, 94, 0.1)); padding: 2rem 0; border-top: 1px solid rgba(236, 72, 153, 0.2);">
+        <div class="container">
+            <div style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(244, 63, 94, 0.15)); border: 1px solid rgba(236, 72, 153, 0.3); border-radius: 1rem; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+                <div>
+                    <h4 style="font-size: 1rem; font-weight: 600; color: #f472b6; margin-bottom: 0.25rem;">✨ 매일이 새로운 설렘</h4>
+                    <p style="font-size: 0.8125rem; color: #cbd5e1;">여성의류 쇼핑몰 <strong>AVOIR(아브아르)</strong></p>
+                </div>
+                <a href="https://avoir24.com/" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #f472b6, #ec4899); color: white; padding: 0.5rem 1.25rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600; font-size: 0.8125rem; white-space: nowrap; transition: all 150ms; box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(236, 72, 153, 0.4)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(236, 72, 153, 0.3)';">
+                    AVOIR 둘러보기 →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AI Tools Atlas. 모든 도구는 각 제공자의 정책을 따릅니다.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.75rem;">마지막 업데이트: <span id="last-updated">로딩 중...</span></p>
+        </div>
+    </footer>
+
+    <script>
+        // 데이터 로드
+        let allTools = [];
+        let allArchitectures = [];
+        let filteredTools = [];
+        let activeCategory = '전체';
+
+        async function loadData() {
+            try {
+                // tools.json 로드
+                const toolsRes = await fetch('./tools.json');
+                const toolsData = await toolsRes.json();
+                allTools = toolsData.tools || [];
+                filteredTools = allTools;
+
+                // architecture.json 로드
+                const archRes = await fetch('./architecture.json');
+                const archData = await archRes.json();
+                allArchitectures = archData.architectures || [];
+
+                // 업데이트 날짜 설정
+                document.getElementById('last-updated').textContent = toolsData.meta?.lastUpdated || 'N/A';
+                document.getElementById('hero-stats').textContent = `${allTools.length}개 도구 · ${new Set(allTools.map(t => t.category)).size}개 카테고리 · Best Practice`;
+
+                // UI 렌더링
+                renderArchitecture();
+                renderTools();
+                renderFilters();
+                setupSearch();
+            } catch (error) {
+                console.error('데이터 로드 실패:', error);
+            }
+        }
+
+        function renderArchitecture() {
+            const grid = document.getElementById('architecture-grid');
+            grid.innerHTML = allArchitectures.map(arch => `
+                <div class="arch-card">
+                    <div class="arch-card-title">${arch.title}</div>
+                    <div class="arch-card-subtitle">${arch.subtitle}</div>
+                    <div class="arch-card-desc">${arch.description}</div>
+                    <div class="arch-tools">
+                        ${arch.tools.slice(0, 2).map((tool, i) => `
+                            <div class="arch-tool-badge">${tool.toolName}</div>
+                        `).join('')}
+                        ${arch.tools.length > 2 ? `<div class="arch-tool-badge">+${arch.tools.length - 2}</div>` : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderFilters() {
+            const filterContainer = document.getElementById('category-filters');
+            const categories = ['전체', ...new Set(allTools.map(t => t.category))];
+            
+            filterContainer.innerHTML = categories.map(cat => `
+                <button class="filter-btn ${cat === activeCategory ? 'active' : ''}" data-category="${cat}">
+                    ${cat}
+                </button>
+            `).join('');
+
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    activeCategory = btn.dataset.category;
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    applyFilters();
+                });
+            });
+        }
+
+        function renderTools() {
+            const grid = document.getElementById('tools-grid');
+            const stats = document.getElementById('tools-count');
+            
+            const freeCount = filteredTools.filter(t => t.price === 'free').length;
+            const paidCount = filteredTools.filter(t => t.price === 'paid').length;
+            
+            stats.textContent = `전체 ${filteredTools.length}개 도구 · 무료 ${freeCount}개 · 유료 ${paidCount}개`;
+
+            if (filteredTools.length === 0) {
+                grid.innerHTML = '<div class="loading">검색 결과가 없습니다.</div>';
+                return;
+            }
+
+            grid.innerHTML = filteredTools.map(tool => `
+                <div class="tool-card">
+                    <div class="tool-card-header">
+                        <div class="tool-icon">${tool.logo}</div>
+                        <div>
+                            <div class="tool-card-title">${tool.name}</div>
+                            <div class="tool-card-desc">${tool.category}</div>
+                        </div>
+                    </div>
+                    <div class="tool-details">
+                        <div class="tool-oneliner">${tool.oneliner}</div>
+                        <div class="tool-description">${tool.description}</div>
+                        <div class="tool-usecases">💡 ${tool.useCases}</div>
+                    </div>
+                    <div class="tool-footer">
+                        <span class="tool-price ${`price-${tool.price}`}">${tool.priceLabel}</span>
+                        <a href="${tool.url}" target="_blank" rel="noopener noreferrer" class="tool-link" title="${tool.name} 방문">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 3h6v6"></path>
+                                <path d="M10 14 21 3"></path>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function setupSearch() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase();
+                filteredTools = allTools.filter(tool => {
+                    const matches = tool.name.toLowerCase().includes(query) ||
+                                   tool.oneliner.toLowerCase().includes(query) ||
+                                   tool.description.toLowerCase().includes(query);
+                    const categoryMatches = activeCategory === '전체' || tool.category === activeCategory;
+                    return matches && categoryMatches;
+                });
+                renderTools();
+            });
+        }
+
+        function applyFilters() {
+            const searchQuery = document.getElementById('search-input').value.toLowerCase();
+            filteredTools = allTools.filter(tool => {
+                const matches = tool.name.toLowerCase().includes(searchQuery) ||
+                               tool.oneliner.toLowerCase().includes(searchQuery) ||
+                               tool.description.toLowerCase().includes(searchQuery);
+                const categoryMatches = activeCategory === '전체' || tool.category === activeCategory;
+                return matches && categoryMatches;
+            });
+            renderTools();
+        }
+
+        // 페이지 로드 시 데이터 로드
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

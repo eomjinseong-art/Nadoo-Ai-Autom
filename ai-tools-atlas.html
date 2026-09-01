@@ -1,0 +1,1790 @@
+<!doctype html>
+<html lang="en"><head>
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+  <style type="text/css" data-vite-dev-id="/home/project/src/index.css">@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*, ::before, ::after{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop{
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.inset-0{
+  inset: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.bottom-1\/4{
+  bottom: 25%;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.left-1\/3{
+  left: 33.333333%;
+}
+
+.left-1\/4{
+  left: 25%;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.right-1\/4{
+  right: 25%;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
+.top-1\/4{
+  top: 25%;
+}
+
+.top-40{
+  top: 10rem;
+}
+
+.z-20{
+  z-index: 20;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.mt-0\.5{
+  margin-top: 0.125rem;
+}
+
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.mt-8{
+  margin-top: 2rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
+.h-11{
+  height: 2.75rem;
+}
+
+.h-2{
+  height: 0.5rem;
+}
+
+.h-2\.5{
+  height: 0.625rem;
+}
+
+.h-3{
+  height: 0.75rem;
+}
+
+.h-3\.5{
+  height: 0.875rem;
+}
+
+.h-4{
+  height: 1rem;
+}
+
+.h-5{
+  height: 1.25rem;
+}
+
+.h-8{
+  height: 2rem;
+}
+
+.h-9{
+  height: 2.25rem;
+}
+
+.h-\[300px\]{
+  height: 300px;
+}
+
+.h-\[400px\]{
+  height: 400px;
+}
+
+.h-\[500px\]{
+  height: 500px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.min-h-screen{
+  min-height: 100vh;
+}
+
+.w-10{
+  width: 2.5rem;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
+.w-2{
+  width: 0.5rem;
+}
+
+.w-2\.5{
+  width: 0.625rem;
+}
+
+.w-3{
+  width: 0.75rem;
+}
+
+.w-3\.5{
+  width: 0.875rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
+.w-8{
+  width: 2rem;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
+.w-\[300px\]{
+  width: 300px;
+}
+
+.w-\[400px\]{
+  width: 400px;
+}
+
+.w-\[500px\]{
+  width: 500px;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-px{
+  width: 1px;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
+}
+
+.max-w-4xl{
+  max-width: 56rem;
+}
+
+.max-w-7xl{
+  max-width: 80rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.shrink-0{
+  flex-shrink: 0;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes ping{
+
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-0\.5{
+  gap: 0.125rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
+.gap-1\.5{
+  gap: 0.375rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.space-y-0 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0px * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
+.rounded-full{
+  border-radius: 9999px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.rounded-md{
+  border-radius: 0.375rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-y{
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
+}
+
+.border-t{
+  border-top-width: 1px;
+}
+
+.border-blue-500\/20{
+  border-color: rgb(59 130 246 / 0.2);
+}
+
+.border-cyan-500\/20{
+  border-color: rgb(6 182 212 / 0.2);
+}
+
+.border-emerald-500\/20{
+  border-color: rgb(16 185 129 / 0.2);
+}
+
+.border-emerald-500\/40{
+  border-color: rgb(16 185 129 / 0.4);
+}
+
+.border-indigo-500\/20{
+  border-color: rgb(99 102 241 / 0.2);
+}
+
+.border-orange-500\/20{
+  border-color: rgb(249 115 22 / 0.2);
+}
+
+.border-pink-500\/20{
+  border-color: rgb(236 72 153 / 0.2);
+}
+
+.border-red-500\/20{
+  border-color: rgb(239 68 68 / 0.2);
+}
+
+.border-teal-500\/20{
+  border-color: rgb(20 184 166 / 0.2);
+}
+
+.border-transparent{
+  border-color: transparent;
+}
+
+.border-violet-500\/20{
+  border-color: rgb(139 92 246 / 0.2);
+}
+
+.border-white\/10{
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.border-white\/20{
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.border-white\/5{
+  border-color: rgb(255 255 255 / 0.05);
+}
+
+.border-cyan-500\/30{
+  border-color: rgb(6 182 212 / 0.3);
+}
+
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-blue-500\/10{
+  background-color: rgb(59 130 246 / 0.1);
+}
+
+.bg-cyan-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity, 1));
+}
+
+.bg-cyan-500\/10{
+  background-color: rgb(6 182 212 / 0.1);
+}
+
+.bg-cyan-500\/15{
+  background-color: rgb(6 182 212 / 0.15);
+}
+
+.bg-cyan-500\/5{
+  background-color: rgb(6 182 212 / 0.05);
+}
+
+.bg-emerald-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--tw-bg-opacity, 1));
+}
+
+.bg-emerald-500\/10{
+  background-color: rgb(16 185 129 / 0.1);
+}
+
+.bg-emerald-500\/15{
+  background-color: rgb(16 185 129 / 0.15);
+}
+
+.bg-emerald-500\/5{
+  background-color: rgb(16 185 129 / 0.05);
+}
+
+.bg-indigo-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(129 140 248 / var(--tw-bg-opacity, 1));
+}
+
+.bg-indigo-500\/10{
+  background-color: rgb(99 102 241 / 0.1);
+}
+
+.bg-orange-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity, 1));
+}
+
+.bg-orange-500\/10{
+  background-color: rgb(249 115 22 / 0.1);
+}
+
+.bg-orange-500\/15{
+  background-color: rgb(249 115 22 / 0.15);
+}
+
+.bg-pink-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
+}
+
+.bg-pink-500\/10{
+  background-color: rgb(236 72 153 / 0.1);
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-500\/10{
+  background-color: rgb(239 68 68 / 0.1);
+}
+
+.bg-slate-700\/40{
+  background-color: rgb(51 65 85 / 0.4);
+}
+
+.bg-slate-900\/40{
+  background-color: rgb(15 23 42 / 0.4);
+}
+
+.bg-slate-900\/60{
+  background-color: rgb(15 23 42 / 0.6);
+}
+
+.bg-slate-950{
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+}
+
+.bg-slate-950\/50{
+  background-color: rgb(2 6 23 / 0.5);
+}
+
+.bg-slate-950\/80{
+  background-color: rgb(2 6 23 / 0.8);
+}
+
+.bg-teal-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 212 191 / var(--tw-bg-opacity, 1));
+}
+
+.bg-teal-500\/10{
+  background-color: rgb(20 184 166 / 0.1);
+}
+
+.bg-violet-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 139 250 / var(--tw-bg-opacity, 1));
+}
+
+.bg-violet-500\/10{
+  background-color: rgb(139 92 246 / 0.1);
+}
+
+.bg-white\/15{
+  background-color: rgb(255 255 255 / 0.15);
+}
+
+.bg-white\/5{
+  background-color: rgb(255 255 255 / 0.05);
+}
+
+.bg-gradient-to-b{
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r{
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-blue-500{
+  --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-cyan-400{
+  --tw-gradient-from: #22d3ee var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(34 211 238 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-cyan-500{
+  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-cyan-500\/5{
+  --tw-gradient-from: rgb(6 182 212 / 0.05) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-emerald-500{
+  --tw-gradient-from: #10b981 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(16 185 129 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-indigo-500{
+  --tw-gradient-from: #6366f1 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(99 102 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange-500{
+  --tw-gradient-from: #f97316 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(249 115 22 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pink-500{
+  --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red-500{
+  --tw-gradient-from: #ef4444 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(239 68 68 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-teal-500{
+  --tw-gradient-from: #14b8a6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(20 184 166 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-violet-500{
+  --tw-gradient-from: #8b5cf6 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(139 92 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-white\/20{
+  --tw-gradient-from: rgb(255 255 255 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-blue-400{
+  --tw-gradient-to: rgb(96 165 250 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #60a5fa var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.to-amber-500{
+  --tw-gradient-to: #f59e0b var(--tw-gradient-to-position);
+}
+
+.to-blue-500{
+  --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+
+.to-blue-500\/5{
+  --tw-gradient-to: rgb(59 130 246 / 0.05) var(--tw-gradient-to-position);
+}
+
+.to-cyan-500{
+  --tw-gradient-to: #06b6d4 var(--tw-gradient-to-position);
+}
+
+.to-green-500{
+  --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
+}
+
+.to-purple-500{
+  --tw-gradient-to: #a855f7 var(--tw-gradient-to-position);
+}
+
+.to-rose-500{
+  --tw-gradient-to: #f43f5e var(--tw-gradient-to-position);
+}
+
+.to-sky-500{
+  --tw-gradient-to: #0ea5e9 var(--tw-gradient-to-position);
+}
+
+.to-teal-400{
+  --tw-gradient-to: #2dd4bf var(--tw-gradient-to-position);
+}
+
+.to-teal-500{
+  --tw-gradient-to: #14b8a6 var(--tw-gradient-to-position);
+}
+
+.to-white\/5{
+  --tw-gradient-to: rgb(255 255 255 / 0.05) var(--tw-gradient-to-position);
+}
+
+.bg-clip-text{
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
+.px-1\.5{
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-6{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-0\.5{
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-1\.5{
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.py-16{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.leading-tight{
+  line-height: 1.25;
+}
+
+.tracking-tight{
+  letter-spacing: -0.025em;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
+.text-blue-400{
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-400{
+  --tw-text-opacity: 1;
+  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-500\/40{
+  color: rgb(6 182 212 / 0.4);
+}
+
+.text-emerald-300{
+  --tw-text-opacity: 1;
+  color: rgb(110 231 183 / var(--tw-text-opacity, 1));
+}
+
+.text-emerald-400{
+  --tw-text-opacity: 1;
+  color: rgb(52 211 153 / var(--tw-text-opacity, 1));
+}
+
+.text-emerald-500\/70{
+  color: rgb(16 185 129 / 0.7);
+}
+
+.text-indigo-400{
+  --tw-text-opacity: 1;
+  color: rgb(129 140 248 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-400{
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+}
+
+.text-pink-400{
+  --tw-text-opacity: 1;
+  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+}
+
+.text-red-400{
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-100{
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-200{
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-300{
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-400{
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-500{
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-600{
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+
+.text-teal-400{
+  --tw-text-opacity: 1;
+  color: rgb(45 212 191 / var(--tw-text-opacity, 1));
+}
+
+.text-transparent{
+  color: transparent;
+}
+
+.text-violet-400{
+  --tw-text-opacity: 1;
+  color: rgb(167 139 250 / var(--tw-text-opacity, 1));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-cyan-300{
+  --tw-text-opacity: 1;
+  color: rgb(103 232 249 / var(--tw-text-opacity, 1));
+}
+
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.placeholder-slate-500::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-placeholder-opacity, 1));
+}
+
+.placeholder-slate-500::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-placeholder-opacity, 1));
+}
+
+.opacity-75{
+  opacity: 0.75;
+}
+
+.shadow-lg{
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-cyan-500\/25{
+  --tw-shadow-color: rgb(6 182 212 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.blur-\[100px\]{
+  --tw-blur: blur(100px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-\[120px\]{
+  --tw-blur: blur(120px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur-xl{
+  --tw-backdrop-blur: blur(24px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+.hover\:border-blue-500\/40:hover{
+  border-color: rgb(59 130 246 / 0.4);
+}
+
+.hover\:border-cyan-500\/40:hover{
+  border-color: rgb(6 182 212 / 0.4);
+}
+
+.hover\:border-emerald-500\/40:hover{
+  border-color: rgb(16 185 129 / 0.4);
+}
+
+.hover\:border-indigo-500\/40:hover{
+  border-color: rgb(99 102 241 / 0.4);
+}
+
+.hover\:border-orange-500\/40:hover{
+  border-color: rgb(249 115 22 / 0.4);
+}
+
+.hover\:border-pink-500\/40:hover{
+  border-color: rgb(236 72 153 / 0.4);
+}
+
+.hover\:border-red-500\/40:hover{
+  border-color: rgb(239 68 68 / 0.4);
+}
+
+.hover\:border-teal-500\/40:hover{
+  border-color: rgb(20 184 166 / 0.4);
+}
+
+.hover\:border-violet-500\/40:hover{
+  border-color: rgb(139 92 246 / 0.4);
+}
+
+.hover\:border-white\/10:hover{
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:border-white\/20:hover{
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:border-cyan-500\/50:hover{
+  border-color: rgb(6 182 212 / 0.5);
+}
+
+.hover\:bg-slate-900\/60:hover{
+  background-color: rgb(15 23 42 / 0.6);
+}
+
+.hover\:bg-white\/10:hover{
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.hover\:bg-white\/5:hover{
+  background-color: rgb(255 255 255 / 0.05);
+}
+
+.hover\:bg-cyan-500\/20:hover{
+  background-color: rgb(6 182 212 / 0.2);
+}
+
+.hover\:text-slate-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-cyan-200:hover{
+  --tw-text-opacity: 1;
+  color: rgb(165 243 252 / var(--tw-text-opacity, 1));
+}
+
+.focus\:border-cyan-500\/50:focus{
+  border-color: rgb(6 182 212 / 0.5);
+}
+
+.focus\:bg-white\/10:focus{
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.group:hover .group-hover\:scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group\/tool:hover .group-hover\/tool\:text-slate-400{
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity, 1));
+}
+
+.group\/tool:hover .group-hover\/tool\:text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px){
+
+  .sm\:inline{
+    display: inline;
+  }
+
+  .sm\:w-64{
+    width: 16rem;
+  }
+
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
+  .sm\:items-start{
+    align-items: flex-start;
+  }
+
+  .sm\:items-end{
+    align-items: flex-end;
+  }
+
+  .sm\:justify-between{
+    justify-content: space-between;
+  }
+
+  .sm\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px){
+
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:p-8{
+    padding: 2rem;
+  }
+
+  .md\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 1024px){
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="min-h-screen bg-slate-950 text-slate-100 antialiased"><header class="relative z-20 border-b border-white/5 bg-slate-950/80 backdrop-blur-xl"><div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"><div class="flex items-center gap-3"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-400 to-blue-500 shadow-lg shadow-cyan-500/25"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-white"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg></div><div><h1 class="text-lg font-bold tracking-tight text-white">AI Tools Atlas</h1><p class="text-xs text-slate-400">카테고리별 AI 도구 &amp; 자동화 워크플로우</p></div></div><div class="flex items-center gap-2"><button class="flex items-center gap-2 rounded-lg border border-cyan-500/30 bg-cyan-500/10 px-4 py-2 text-sm text-cyan-300 transition hover:border-cyan-500/50 hover:bg-cyan-500/20 hover:text-cyan-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download h-4 w-4"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" x2="12" y1="15" y2="3"></line></svg><span class="hidden sm:inline">HTML 다운로드</span></button><a href="https://github.com/topics/ai-tools" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 rounded-lg border border-white/10 px-4 py-2 text-sm text-slate-300 transition hover:border-white/20 hover:bg-white/5 hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-4 w-4"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg><span class="hidden sm:inline">오픈소스</span></a></div></div></header><main><section class="relative overflow-hidden"><div class="absolute inset-0"><div class="absolute left-1/4 top-0 h-[500px] w-[500px] rounded-full bg-cyan-500/10 blur-[120px]"></div><div class="absolute right-1/4 top-40 h-[400px] w-[400px] rounded-full bg-blue-500/10 blur-[120px]"></div><div class="absolute bottom-0 left-1/3 h-[300px] w-[300px] rounded-full bg-teal-500/10 blur-[100px]"></div></div><div class="relative mx-auto max-w-7xl px-6 py-20 text-center"><div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-slate-300"><span class="relative flex h-2 w-2"><span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span><span class="relative inline-flex h-2 w-2 rounded-full bg-cyan-400"></span></span>9개 카테고리 · 44+ 도구 · 4가지 자동화 시나리오</div><h1 class="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl">AI 도구를 연결하면<br><span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-teal-400 bg-clip-text text-transparent">하나의 자동화 엔진</span>이 됩니다</h1><p class="mx-auto mt-6 max-w-2xl text-lg text-slate-400">카테고리별로 정리된 AI 도구들을 탐색하고, 실제 자동화 워크플로우에서 어떻게 조합되는지 확인하세요. 가장 효율적인 자동화 파이프라인을 설계하는 모든 힌트가 여기 있습니다.</p><div class="mt-10 flex flex-wrap items-center justify-center gap-4"><div class="flex items-center gap-2 text-sm text-slate-300"><div class="flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-500/15 text-cyan-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers h-4 w-4"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"></path><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"></path><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"></path></svg></div>카테고리 탐색</div><div class="flex items-center gap-2 text-sm text-slate-300"><div class="flex h-8 w-8 items-center justify-center rounded-lg bg-orange-500/15 text-orange-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-4 w-4"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div>워크플로우 시각화</div><div class="flex items-center gap-2 text-sm text-slate-300"><div class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-4 w-4"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg></div>자동화 효율 분석</div></div></div></section><section id="tools" class="mx-auto max-w-7xl px-6 py-16"><div class="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"><div><h2 class="text-2xl font-bold text-white">카테고리별 AI 도구</h2><p class="mt-1 text-sm text-slate-400">전체 43개 도구 · 무료 33개 · 유료 10개</p></div><div class="flex items-center gap-3"><div class="relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-500"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><input type="text" placeholder="도구 검색..." class="w-full rounded-lg border border-white/10 bg-white/5 py-2 pl-10 pr-4 text-sm text-white placeholder-slate-500 outline-none transition focus:border-cyan-500/50 focus:bg-white/10 sm:w-64" value=""></div><button class="flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition border-white/10 bg-white/5 text-slate-300 hover:bg-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-4 w-4"><path d="M20 6 9 17l-5-5"></path></svg>무료만</button></div></div><div class="mb-8 flex flex-wrap gap-2"><button class="rounded-lg border px-3 py-1.5 text-sm transition border-white/20 bg-white/15 text-white">전체</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-audio-lines h-3.5 w-3.5"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg>TTS / 음성 생성</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video h-3.5 w-3.5"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg>영상 편집</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image h-3.5 w-3.5"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>이미지 / 카드뉴스</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow h-3.5 w-3.5"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg>오케스트레이션</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-3.5 w-3.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>호스팅 / 배포</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database h-3.5 w-3.5"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>저장소 / 자산 관리</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity h-3.5 w-3.5"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>모니터링</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain h-3.5 w-3.5"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>LLM / 텍스트 생성</button><button class="flex items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table h-3.5 w-3.5"><path d="M12 3v18"></path><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path></svg>데이터 수집 / 처리</button></div><div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"><div class="group rounded-2xl border border-cyan-500/20 bg-slate-900/40 p-6 transition hover:border-cyan-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-audio-lines h-5 w-5"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg></div><div><h3 class="font-semibold text-white">TTS / 음성 생성</h3><p class="text-xs text-slate-500">텍스트를 자연스러운 음성으로 변환</p></div></div><div class="space-y-2"><a href="https://github.com/rany2/edge-tts" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Edge-TTS</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-cyan-500/10 text-cyan-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">마이크로소프트 Edge 기반 무료 TTS. 다양한 한국어 음성 지원</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://cloud.google.com/text-to-speech" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Google Cloud TTS</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">WaveNet 음성으로 고품질 자연스러운 합성 음성 생성</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://platform.openai.com/docs/guides/text-to-speech" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">OpenAI TTS</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">OpenAI의 실감나는 음성 합성 API. 6가지 음성 선택</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">ElevenLabs</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">최고 수준의 음성 복제 및 감정 표현이 가능한 TTS</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://azure.microsoft.com/products/ai-services/text-to-speech" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Azure TTS</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">Azure Cognitive Services. 400+ 음성, 140+ 언어 지원</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-orange-500/20 bg-slate-900/40 p-6 transition hover:border-orange-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-500/10 text-orange-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video h-5 w-5"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg></div><div><h3 class="font-semibold text-white">영상 편집</h3><p class="text-xs text-slate-500">비디오 제작, 편집, 렌더링 자동화</p></div></div><div class="space-y-2"><a href="https://zulko.github.io/moviepy/" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">MoviePy</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-orange-500/10 text-orange-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">Python 기반 영상 편집 라이브러리. 컷, 합성, 자막 삽입 자동화</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://ffmpeg.org" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">FFmpeg</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-orange-500/10 text-orange-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">만능 영상 처리 도구. 변환, 인코딩, 스트리밍까지 모두 처리</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://shotstack.io" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Shotstack</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-orange-500/10 text-orange-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">클라우드 기반 영상 편집 API. 대량 영상 자동 생성에 최적화</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://www.remotion.dev" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Remotion</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-orange-500/10 text-orange-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">React 코드로 영상을 만드는 프로그래밍 영상 도구</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://developers.google.com/youtube/v3" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">YouTube Data API</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-orange-500/10 text-orange-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">YouTube 영상 자동 업로드 및 메타데이터 관리</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-pink-500/20 bg-slate-900/40 p-6 transition hover:border-pink-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-pink-500/10 text-pink-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image h-5 w-5"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg></div><div><h3 class="font-semibold text-white">이미지 / 카드뉴스</h3><p class="text-xs text-slate-500">이미지 생성, 편집, 카드뉴스 자동 제작</p></div></div><div class="space-y-2"><a href="https://python-pillow.org" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Pillow</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-pink-500/10 text-pink-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">Python 이미지 처리 라이브러리. 템플릿 기반 카드뉴스 자동 생성</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://www.canva.com/developers/" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Canva API</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-pink-500/10 text-pink-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">Canva 디자인을 코드로 제어. 템플릿 자동 채우기</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://unsplash.com/developers" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Unsplash API</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-pink-500/10 text-pink-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">무료 고품질 이미지 검색 및 다운로드 API</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://openai.com/dall-e-3" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">OpenAI DALL-E</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">텍스트 프롬프트로 이미지를 생성하는 AI 모델</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://stability.ai" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Stable Diffusion</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-pink-500/10 text-pink-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">오픈소스 이미지 생성 AI. 로컬 실행 가능, 무제한 사용</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-emerald-500/20 bg-slate-900/40 p-6 transition hover:border-emerald-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-workflow h-5 w-5"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg></div><div><h3 class="font-semibold text-white">오케스트레이션</h3><p class="text-xs text-slate-500">워크플로우 자동화, 도구 연결, 스케줄링</p></div></div><div class="space-y-2"><a href="https://n8n.io" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">n8n</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-emerald-500/10 text-emerald-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">오픈소스 워크플로우 자동화. 400+ 통합, 시각적 노드 편집</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">GitHub Actions</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-emerald-500/10 text-emerald-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">코드 푸시 시 자동 실행. CI/CD 및 정기 스케줄 작업</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://www.make.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Make.com</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-emerald-500/10 text-emerald-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">시각적 자동화 플랫폼. 드래그 앤 드롭으로 워크플로우 구성</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://airflow.apache.org" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Apache Airflow</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-emerald-500/10 text-emerald-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">대규모 데이터 파이프라인 오케스트레이션. DAG 기반 스케줄링</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://zapier.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Zapier</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">6000+ 앱 연결 자동화. 노코드 워크플로우 빌더</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-blue-500/20 bg-slate-900/40 p-6 transition hover:border-blue-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-5 w-5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><div><h3 class="font-semibold text-white">호스팅 / 배포</h3><p class="text-xs text-slate-500">웹사이트, API, 정적 자산 배포</p></div></div><div class="space-y-2"><a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Vercel</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-blue-500/10 text-blue-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">프론트엔드 및 서버리스 API 배포. GitHub 연동 자동 배포</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://pages.github.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">GitHub Pages</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-blue-500/10 text-blue-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">정적 사이트 무료 호스팅. 저장소와 직접 연결</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Netlify</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-blue-500/10 text-blue-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">정적 사이트 + 서버리스 함수. 폼 처리 기능 내장</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://pages.cloudflare.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Cloudflare Pages</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-blue-500/10 text-blue-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">엣지 네트워크 기반 초고속 정적 호스팅</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://railway.app" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Railway</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">풀스택 앱 배포. 데이터베이스부터 백엔드까지 한 곳에</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-violet-500/20 bg-slate-900/40 p-6 transition hover:border-violet-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database h-5 w-5"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg></div><div><h3 class="font-semibold text-white">저장소 / 자산 관리</h3><p class="text-xs text-slate-500">데이터 저장, 파일 관리, 에셋 카탈로그</p></div></div><div class="space-y-2"><a href="https://supabase.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Supabase</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-violet-500/10 text-violet-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">오픈소스 Firebase 대안. DB, 인증, 스토리지, 실시간 기능</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://developers.google.com/drive" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Google Drive API</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-violet-500/10 text-violet-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">클라우드 파일 저장 및 공유 자동화. 대용량 무료 공간</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://aws.amazon.com/s3" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">AWS S3</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">업계 표준 객체 스토리지. 무료 tier 5GB 제공</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://cloudinary.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Cloudinary</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-violet-500/10 text-violet-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">이미지/영상 CDN + 변환 API. 자동 리사이징, 최적화</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-red-500/20 bg-slate-900/40 p-6 transition hover:border-red-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-red-500/10 text-red-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity h-5 w-5"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg></div><div><h3 class="font-semibold text-white">모니터링</h3><p class="text-xs text-slate-500">서비스 상태 확인, 오류 추적, 알림</p></div></div><div class="space-y-2"><a href="https://uptimerobot.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">UptimeRobot</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-red-500/10 text-red-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">무료 웹사이트 가동 모니터링. 50개까지 무료 추적</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://betterstack.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Better Stack</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-red-500/10 text-red-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">통합 모니터링 + 알림 + 상태 페이지. 팀 협업 기능</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://sentry.io" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Sentry</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-red-500/10 text-red-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">실시간 에러 추적 및 성능 모니터링. 스택트레이스 자동 수집</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://grafana.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Grafana</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-red-500/10 text-red-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">오픈소스 메트릭 시각화 대시보드. 다양한 데이터소스 연동</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-indigo-500/20 bg-slate-900/40 p-6 transition hover:border-indigo-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain h-5 w-5"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg></div><div><h3 class="font-semibold text-white">LLM / 텍스트 생성</h3><p class="text-xs text-slate-500">텍스트 생성, 요약, 번역, 코드 작성</p></div></div><div class="space-y-2"><a href="https://openai.com/gpt-4" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">OpenAI GPT-4</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">최강 범용 LLM. 텍스트 생성, 코드, 분석, 추론</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://anthropic.com/claude" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Anthropic Claude</span><span class="flex items-center gap-0.5 rounded bg-slate-700/40 px-1.5 py-0.5 text-[10px] font-medium text-slate-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock h-2.5 w-2.5"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>유료</span></div><p class="mt-0.5 text-xs text-slate-500">긴 문맥 처리에 강점. 200K 토큰 컨텍스트 윈도우</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://deepmind.google/technologies/gemini/" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Google Gemini</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-indigo-500/10 text-indigo-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">멀티모달 LLM. 텍스트, 이미지, 영상 동시 처리</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://langchain.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">LangChain</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-indigo-500/10 text-indigo-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">LLM 앱 개발 프레임워크. 체인, 에이전트, 메모리 관리</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://ollama.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Ollama</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-indigo-500/10 text-indigo-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">로컬에서 LLM 실행. 무료, 무제한, 프라이버시 보장</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div><div class="group rounded-2xl border border-teal-500/20 bg-slate-900/40 p-6 transition hover:border-teal-500/40 hover:bg-slate-900/60"><div class="mb-4 flex items-center gap-3"><div class="flex h-11 w-11 items-center justify-center rounded-xl bg-teal-500/10 text-teal-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table h-5 w-5"><path d="M12 3v18"></path><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M3 15h18"></path></svg></div><div><h3 class="font-semibold text-white">데이터 수집 / 처리</h3><p class="text-xs text-slate-500">웹 스크래핑, 데이터 추출, 전처리</p></div></div><div class="space-y-2"><a href="https://beautiful-soup-4.readthedocs.io" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">BeautifulSoup</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-teal-500/10 text-teal-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">Python HTML 파싱 라이브러리. 웹 페이지 데이터 추출</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://scrapy.org" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Scrapy</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-teal-500/10 text-teal-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">고성능 웹 크롤링 프레임워크. 대규모 스크래핑 자동화</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://apify.com" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Apify</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-teal-500/10 text-teal-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">클라우드 웹 스크래핑 플랫폼. 사전 구축 스크래퍼 5000+</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://pandas.pydata.org" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Pandas</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-teal-500/10 text-teal-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">Python 데이터 분석 라이브러리. CSV, JSON, DB 데이터 처리</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a><a href="https://playwright.dev" target="_blank" rel="noopener noreferrer" class="group/tool flex items-start gap-3 rounded-lg border border-transparent p-3 transition hover:border-white/10 hover:bg-white/5"><div class="flex-1"><div class="flex items-center gap-2"><span class="text-sm font-medium text-slate-200 group-hover/tool:text-white">Playwright</span><span class="rounded px-1.5 py-0.5 text-[10px] font-medium bg-teal-500/10 text-teal-400">무료</span></div><p class="mt-0.5 text-xs text-slate-500">브라우저 자동화. 동적 페이지 스크래핑 및 테스트</p></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link mt-1 h-3.5 w-3.5 shrink-0 text-slate-600 transition group-hover/tool:text-slate-400"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></a></div></div></div></section><section id="workflows" class="relative overflow-hidden border-y border-white/5 bg-slate-950/50"><div class="absolute inset-0"><div class="absolute right-0 top-1/4 h-[400px] w-[400px] rounded-full bg-emerald-500/5 blur-[120px]"></div><div class="absolute left-0 bottom-1/4 h-[300px] w-[300px] rounded-full bg-cyan-500/5 blur-[100px]"></div></div><div class="relative mx-auto max-w-7xl px-6 py-16"><div class="mb-8 text-center"><div class="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-3 w-3"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>자동화 시나리오</div><h2 class="text-2xl font-bold text-white">도구를 연결한 자동화 워크플로우</h2><p class="mt-2 text-sm text-slate-400">개별 도구를 파이프라인으로 연결하면, 사람의 개입 없이 입력만으로 완성된 결과물이 나옵니다.</p></div><div class="mb-8 flex flex-wrap justify-center gap-2"><button class="rounded-lg border px-4 py-2 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200">블로그 → 카드뉴스 자동 생성</button><button class="rounded-lg border px-4 py-2 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200">텍스트 → 음성 → 영상 자동 제작</button><button class="rounded-lg border px-4 py-2 text-sm transition border-white/10 bg-white/5 text-slate-400 hover:bg-white/10 hover:text-slate-200">데이터 수집 → AI 분석 → 알림</button><button class="rounded-lg border px-4 py-2 text-sm transition border-white/20 bg-white/15 text-white">풀스택 AI 콘텐츠 팩토리</button></div><div class="rounded-2xl border border-white/10 bg-slate-900/60 p-6 md:p-8"><div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between"><div><h3 class="text-lg font-semibold text-white">풀스택 AI 콘텐츠 팩토리</h3><p class="mt-1 text-sm text-slate-400">하나의 아이디어에서 출발해 글, 이미지, 음성, 영상을 모두 자동 생성하는 통합 파이프라인</p></div><div class="flex shrink-0 gap-3"><div class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-center"><p class="text-[10px] uppercase tracking-wide text-slate-500">트리거</p><p class="mt-0.5 text-xs font-medium text-slate-200">키워드 입력</p></div><div class="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-center"><p class="text-[10px] uppercase tracking-wide text-slate-500">주기</p><p class="mt-0.5 flex items-center gap-1 text-xs font-medium text-slate-200"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock h-3 w-3"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>주문형 (API 호출)</p></div></div></div><div class="space-y-0"><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play h-4 w-4 text-white"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">Gemini / GPT</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">키워드 → 블로그 글 생성</span></div><p class="mt-1 text-[11px] text-slate-600">Step 1</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-image h-4 w-4 text-white"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">DALL-E</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">썸네일 + 본문 이미지 생성</span></div><p class="mt-1 text-[11px] text-slate-600">Step 2</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-audio-lines h-4 w-4 text-white"><path d="M2 10v3"></path><path d="M6 6v11"></path><path d="M10 3v18"></path><path d="M14 8v7"></path><path d="M18 5v13"></path><path d="M22 10v3"></path></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">Edge-TTS</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">글 → 음성 버전 생성</span></div><p class="mt-1 text-[11px] text-slate-600">Step 3</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-video h-4 w-4 text-white"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">MoviePy</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">이미지+음성 → 영상 제작</span></div><p class="mt-1 text-[11px] text-slate-600">Step 4</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe h-4 w-4 text-white"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">Vercel</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">블로그 페이지 자동 배포</span></div><p class="mt-1 text-[11px] text-slate-600">Step 5</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database h-4 w-4 text-white"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg></div><div class="my-1 h-8 w-px bg-gradient-to-b from-white/20 to-white/5"></div></div><div class="flex-1 pb-2 pb-6"><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">Supabase</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">모든 에셋 카탈로그화</span></div><p class="mt-1 text-[11px] text-slate-600">Step 6</p></div></div><div class="flex items-start gap-4"><div class="flex flex-col items-center"><div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 shadow-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-activity h-4 w-4 text-white"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg></div></div><div class="flex-1 pb-2 "><div class="flex items-center gap-2"><span class="rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-slate-200">UptimeRobot</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right h-3 w-3 text-slate-600"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span class="text-xs text-slate-400">배포 상태 모니터링</span></div><p class="mt-1 text-[11px] text-slate-600">Step 7</p></div></div></div><div class="mt-6 flex items-center gap-3 rounded-xl border border-emerald-500/20 bg-emerald-500/5 p-4"><div class="flex h-9 w-9 items-center justify-center rounded-lg bg-emerald-500/15 text-emerald-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap h-4 w-4"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></div><div><p class="text-xs uppercase tracking-wide text-emerald-500/70">최종 결과물</p><p class="text-sm font-medium text-emerald-300">블로그 글 + 이미지 + 팟캐스트 + 영상 + 웹페이지</p></div></div></div></div></section><section class="mx-auto max-w-7xl px-6 py-16"><div class="mb-8 text-center"><h2 class="text-2xl font-bold text-white">효율적인 자동화 설계 원칙</h2><p class="mt-2 text-sm text-slate-400">도구를 많이 아는 것보다, 어떻게 연결하느냐가 자동화의 효율을 결정합니다.</p></div><div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"><div class="group rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition hover:border-white/20 hover:bg-slate-900/60"><div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl text-cyan-400 bg-cyan-500/10 transition group-hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-repeat h-5 w-5"><path d="m17 2 4 4-4 4"></path><path d="M3 11v-1a4 4 0 0 1 4-4h14"></path><path d="m7 22-4-4 4-4"></path><path d="M21 13v1a4 4 0 0 1-4 4H3"></path></svg></div><h3 class="font-semibold text-white">트리거 기반 설계</h3><p class="mt-2 text-sm text-slate-400">사람이 버튼을 누르는 대신, 이벤트(새 글 게시, 파일 업로드, 시간)가 워크플로우를 자동 시작하게 만드세요.</p></div><div class="group rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition hover:border-white/20 hover:bg-slate-900/60"><div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl text-emerald-400 bg-emerald-500/10 transition group-hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link2 h-5 w-5"><path d="M9 17H7A5 5 0 0 1 7 7h2"></path><path d="M15 7h2a5 5 0 1 1 0 10h-2"></path><line x1="8" x2="16" y1="12" y2="12"></line></svg></div><h3 class="font-semibold text-white">도구 간 연결</h3><p class="mt-2 text-sm text-slate-400">한 도구의 출력이 다음 도구의 입력이 되도록 파이프라인을 설계하세요. n8n, Make.com이 이 연결을 시각적으로 관리합니다.</p></div><div class="group rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition hover:border-white/20 hover:bg-slate-900/60"><div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl text-orange-400 bg-orange-500/10 transition group-hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gauge h-5 w-5"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg></div><h3 class="font-semibold text-white">무료 도구 우선</h3><p class="mt-2 text-sm text-slate-400">Edge-TTS, Pillow, FFmpeg, Supabase 등 무료 도구로 80%의 자동화를 커버할 수 있습니다. 비용이 드는 API는 차별적으로 도입하세요.</p></div><div class="group rounded-2xl border border-white/10 bg-slate-900/40 p-6 transition hover:border-white/20 hover:bg-slate-900/60"><div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl text-violet-400 bg-violet-500/10 transition group-hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up h-5 w-5"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg></div><h3 class="font-semibold text-white">점진적 확장</h3><p class="mt-2 text-sm text-slate-400">처음부터 전체 파이프라인을 만들지 마세요. 하나의 도구 → 두 개 연결 → 전체 워크플로우 순으로 점진적으로 구축하세요.</p></div></div><div class="mt-8 rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 p-8"><h3 class="mb-4 text-lg font-semibold text-white">추천 자동화 스택 (전부 무료)</h3><div class="flex flex-wrap items-center gap-3 text-sm"><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">n8n (오케스트레이션)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">Edge-TTS (음성)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">Pillow (이미지)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">MoviePy (영상)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">Supabase (저장소)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">Vercel (배포)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">GitHub Actions (스케줄)</span><span class="text-cyan-500/40">+</span></span><span class="flex items-center gap-3"><span class="rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-slate-200">UptimeRobot (모니터링)</span></span></div><p class="mt-4 text-sm text-slate-400">이 조합으로 월 0원으로 블로그 자동 생성, 카드뉴스 제작, 음성/영상 변환, 자동 배포까지 전부 구축할 수 있습니다.</p></div></section></main><footer class="border-t border-white/5 bg-slate-950"><div class="mx-auto max-w-7xl px-6 py-8"><div class="flex flex-col items-center justify-between gap-4 sm:flex-row"><p class="text-sm text-slate-500">AI Tools Atlas — 카테고리별 AI 도구 &amp; 자동화 워크플로우 가이드</p><p class="flex items-center gap-1.5 text-sm text-slate-500"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart h-3.5 w-3.5 text-red-400"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>자동화로 더 창조적인 일에 집중하세요</p></div></div></footer></div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+<style>@font-face {font-family: Inter-NjBkMDQwOTZj; font-weight: 600; src: url(data:font/woff2;base64,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) format("woff2");} @font-face {font-family: Inter-NjBkMDQwOTZj; font-weight: 500; src: url(data:font/woff2;base64,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) format("woff2");}</style><div style="position: fixed; bottom: 1rem; right: 1rem; z-index: 2147483647;"></div></body></html>
