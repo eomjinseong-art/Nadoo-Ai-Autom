@@ -7,6 +7,10 @@ on:
       - 'tools.json'
       - 'architecture.json'
       - 'index.html'
+      - 'ai-tools-atlas.html'
+      - 'robots.txt'
+      - 'sitemap.xml'
+      - 'og.png'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
