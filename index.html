@@ -111,6 +111,15 @@
             gap: 0.5rem;
         }
 
+        .visit-counter {
+            font-size: 0.75rem;
+            color: #64748b;
+            letter-spacing: 0;
+            white-space: nowrap;
+            user-select: none;
+            padding: 0 0.25rem;
+        }
+
         button, a.btn {
             cursor: pointer;
             border: none;
@@ -906,6 +915,7 @@
                 </div>
             </div>
             <div class="header-right">
+                <span id="visit-counter" class="visit-counter hidden"></span>
                 <a href="#contact" class="btn btn-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -1307,6 +1317,53 @@
         }
 
         document.addEventListener('DOMContentLoaded', loadData);
+
+        (function initVisitCounter() {
+            const el = document.getElementById('visit-counter');
+            if (!el) return;
+
+            const ABACUS_BASE = 'https://abacus.jasoncameron.dev';
+            const NAMESPACE = 'nadoo-ai-autom';
+            const KEY = 'visits';
+            const STORAGE_KEY = 'nadoo-ai-autom:visits:date';
+
+            function todayKey() {
+                const d = new Date();
+                const mm = String(d.getMonth() + 1).padStart(2, '0');
+                const dd = String(d.getDate()).padStart(2, '0');
+                return d.getFullYear() + '-' + mm + '-' + dd;
+            }
+
+            function alreadyCountedToday() {
+                try {
+                    return localStorage.getItem(STORAGE_KEY) === todayKey();
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function markCountedToday() {
+                try {
+                    localStorage.setItem(STORAGE_KEY, todayKey());
+                } catch (e) {}
+            }
+
+            async function loadCount() {
+                try {
+                    const endpoint = alreadyCountedToday() ? 'get' : 'hit';
+                    const res = await fetch(ABACUS_BASE + '/' + endpoint + '/' + NAMESPACE + '/' + KEY);
+                    if (!res.ok) return;
+                    const data = await res.json();
+                    const value = data && data.value;
+                    if (typeof value !== 'number' || !isFinite(value)) return;
+                    if (endpoint === 'hit') markCountedToday();
+                    el.textContent = '👁 ' + value.toLocaleString('en-US');
+                    el.classList.remove('hidden');
+                } catch (e) {}
+            }
+
+            loadCount();
+        })();
     </script>
 </body>
 </html>
